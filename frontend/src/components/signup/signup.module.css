@@ -1,0 +1,213 @@
+.signupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 740px;
+  width: 1530px;
+  background-color: #0f0f10;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+/* Styling the form */
+.signupForm {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #161b22;
+  padding: 20px;
+  padding-right: 20px; /* Reduced padding-right */
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #c9d1d9;
+}
+
+/* Title styling */
+.signupTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #f0f6fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cloud icon styling in title */
+.signupTitleIcon img {
+  width: 60px;
+  margin-top: 5px;
+}
+
+/* Subtitle styling */
+.signupSubtitle {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #8b949e;
+}
+
+/* Label styling above each input */
+.inputLabel {
+  display: block;
+  text-align: left;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  color: #8b949e;
+}
+
+/* Input fields styling */
+.inputField {
+  width: calc(100% - 22px); /* Adjusted width to compensate for padding and border */
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #c9d1d9;
+  font-size: 0.9rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.inputField::placeholder {
+  color: #6e7681;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 0.2rem rgba(59, 113, 202, 0.5);
+}
+
+/* Style for input fields with errors */
+.inputError {
+  border-color: #f85149;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(248, 81, 73, 0.25);
+}
+
+/* Button styling */
+.signupButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2d74da;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signupButton:hover {
+  background-color: #1f5bb5;
+}
+
+/* Footer text and link styling */
+.signupFooter {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+.signinLink {
+  color: #58a6ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signinLink:hover {
+  text-decoration: underline;
+}
+
+/* Error message styling */
+.error {
+  color: #f85149;
+  font-size: 0.85rem;
+  margin-top: -0.8rem;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+/* General message styling (for success or info messages - if you use them) */
+.message, .successMessage, .errorMessage {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.message, .successMessage {
+  background-color: #abedc7;
+  color: #003d1d;
+  border: 1px solid #7dd8b1;
+}
+
+.errorMessage {
+  background-color: #f7caca;
+  color: #5b0f0f;
+  border: 1px solid #f08c8c;
+}
+
+.passwordRequirements {
+  margin-top: 1rem;
+  text-align: left;
+  color: #8b949e;
+}
+
+.passwordRequirements h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #c9d1d9;
+}
+
+.passwordRequirements p {
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+/* Style for invalid password criteria (not met) */
+.invalid {
+  color: #f85149;
+}
+
+/* Style for valid password criteria (met) */
+.valid {
+  color: #76ff7a;
+}
+
+/* Optionally, you can style the '<b>' tags inside the <p> elements if needed */
+.passwordRequirements p b {
+  font-weight: bold;
+  color: inherit;
+}
+
+.passwordContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.showPasswordButton {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #6e7681;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.showPasswordButton:hover {
+  color: #58a6ff;
+}

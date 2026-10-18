@@ -1,0 +1,200 @@
+
+.loginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 740px;
+  width: 1530px;
+  background-color: #0f0f10;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -10px;
+}
+
+/* Styling the form */
+.loginForm {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #161b22;
+  padding: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #c9d1d9;
+}
+
+/* Title styling */
+.loginTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #f0f6fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cloud icon styling in title */
+.loginTitleIcon img {
+  width: 60px;
+  margin-top: 5px;
+}
+
+/* Subtitle styling */
+.loginSubtitle {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  margin-left: 20px;
+  color: #8b949e;
+}
+
+/* Label styling */
+.inputLabel {
+  display: block;
+  text-align: left;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+  color: #8b949e;
+}
+
+/* Input fields styling */
+.inputField {
+  width: calc(100% - 22px); /* Corrected width calculation */
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: #21262d;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #c9d1d9;
+  font-size: 0.9rem;
+}
+
+.inputField::placeholder {
+  color: #6e7681;
+}
+
+/* Button styling */
+.loginButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2d74da;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.loginButton:hover {
+  background-color: #1f5bb5;
+}
+
+/* Divider styling */
+.divider {
+  display: flex;
+  align-items: center;
+  color: #6e7681;
+  font-size: 0.85rem;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #30363d;
+  margin: 0 0.5rem;
+}
+
+/* Google button styling to match dark theme */
+.googleLoginButton {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #21262d;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.googleLoginButton:hover {
+  background-color: #30363d;
+}
+
+/* Google icon styling inside the button */
+.googleIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+/* Footer text and links */
+.loginFooter {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+.forgotPasswordLink,
+.signupLink {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.forgotPasswordLink:hover,
+.signupLink:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  margin: 0 0.5rem;
+  color: #8b949e;
+}
+/* Error message styling */
+.errorMessage {
+  color: #f85149; /* Red color */
+  font-size: 1rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/* Password container */
+.passwordContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Show Password Button */
+.showPasswordButton {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #6e7681;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.showPasswordButton:hover {
+  color: #c9d1d9;
+}

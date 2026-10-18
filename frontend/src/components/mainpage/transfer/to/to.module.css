@@ -1,0 +1,468 @@
+.toContainer {
+  flex: 1;
+  padding: 20px;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  max-height: 270px;
+  margin: 10px;
+  color: #ffffff;
+  display: flex; /* Added to use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+}
+
+.headerContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center; /* Center everything horizontally */
+  position: relative;      /* For absolute positioning of the back button */
+  margin-bottom: 5px;
+}
+
+
+.fromContainer h3 {
+  text-align: center;
+  color: #ffffff;
+}
+.fileList {
+  max-height: 300px; /* Adjust height as needed */
+  overflow-y: auto; /* Enables vertical scrolling */
+  border: 1px solid #4a4a4a; /* Optional: Adds a border */
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.providerButtons {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  margin-top: 50px; /* Add some space if needed */
+}
+
+.providerButton {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 10px; /* Add space between buttons */
+  width: 100px; /* Fixed width */
+  text-align: center; /* Center text inside the button */
+}
+.providerButton:hover {
+  background-color: #5a5a5a;
+}
+
+
+.repoList {
+  text-align: left;
+  color: #ffffff;
+}
+
+
+.fileItem {
+  display: flex;
+  align-items: center; /* Align everything vertically */
+  gap: 10px; /* Space between elements */
+  margin-bottom: 5px;
+}
+
+.fileIcon {
+  font-size: 1.2rem; /* Adjust icon size */
+  min-width: 20px; /* Ensures consistent alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fileLabel {
+  display: flex;
+  align-items: center; /* Align checkbox, icon, and text */
+  gap: 10px; /* Spacing between checkbox, icon, and text */
+}
+
+.fileCheckbox {
+  margin-right: 5px; /* Adjust checkbox spacing */
+}
+
+.folderButton {
+  display: flex;
+  align-items: center; /* Align icon and text */
+  gap: 10px; /* Space between icon and text */
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.folderButton:hover {
+  color: #58a6ff;
+}
+
+
+.fromContainer p{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+
+
+
+
+.breadcrumb {
+  margin: 10px 0;
+  color: #58a6ff;
+}
+
+.newFolderInput {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  width: calc(100% - 24px);
+}
+
+.newFolderButton {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.backButtonContainer { /* Back Button Container Style - new */
+  margin-right: auto; /* Push back button to the left */
+}
+
+
+
+.newFolderButton:hover {
+  background-color: #0056b3;
+}
+.accountList {
+  text-align: left;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.verticalAccountList {
+  overflow-y: auto;
+  max-height: 120px;
+  padding-right: 10px;
+}
+
+
+.verticalAccountList::-webkit-scrollbar,
+.fileList::-webkit-scrollbar {
+  width: 8px;
+  display: block;
+}
+
+.verticalAccountList::-webkit-scrollbar-track,
+.fileList::-webkit-scrollbar-track {
+  background: #1f1f22;
+}
+
+.verticalAccountList::-webkit-scrollbar-thumb,
+.fileList::-webkit-scrollbar-thumb {
+  background: #3d3d43;
+  border-radius: 8px;
+}
+
+.verticalAccountList::-webkit-scrollbar-thumb:hover,
+.fileList::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+.verticalAccountList:hover,
+.fileList:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #3d3d43 #1f1f22;
+}
+
+.verticalAccountList::-webkit-scrollbar-button,
+.fileList::-webkit-scrollbar-button {
+  display: none;
+}
+
+
+.accountButton {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.accountButton:hover {
+  background-color: #5a5a5a;
+}
+
+
+.backButton { /* Back button styling */
+   /* Position absolutely within headerContainer */
+            /* Align to the left */
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -45px;
+}
+
+.backButton:hover {
+  background-color: #5a5a5a;
+}
+.accountSelectTitle { /* Style for "Select an Account" title */
+  text-align: center;
+  color: #ffffff;
+  margin-top:5px;
+  margin-bottom:15px;
+}
+
+.folderButton {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.folderButton:hover {
+  color: #58a6ff;
+}
+  
+
+
+.backButtonContainer { /* Back Button Container Style - new */
+  margin-right: auto; /* Push back button to the left */
+}
+
+
+
+.backButton { /* Back button styling */
+  /* Position absolutely within headerContainer */
+           /* Align to the left */
+ background-color: #4a4a4a;
+ color: #ffffff;
+ border: none;
+ padding: 8px 15px;
+ border-radius: 4px;
+ cursor: pointer;
+ font-size: 1em;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: -45px;
+}
+
+.backButton:hover {
+  background-color: #5a5a5a;
+}
+
+
+
+.toContainer h3 {
+  color: #ffffff;
+  text-align: center;
+}
+.accountList {
+  text-align: left;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  
+}
+
+.accountButton {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.accountSelectTitle { /* Style for "Select an Account" title */
+  text-align: center;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.accountButton:hover {
+  background-color: #5a5a5a;
+}
+.accountList::-webkit-scrollbar,
+.fileList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.accountList::-webkit-scrollbar-track,
+.fileList::-webkit-scrollbar-track {
+  background: #1f1f22;
+}
+
+.accountList::-webkit-scrollbar-thumb,
+.fileList::-webkit-scrollbar-thumb {
+  background: #3d3d43;
+  border-radius: 8px;
+}
+
+.accountList::-webkit-scrollbar-thumb:hover,
+.fileList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+.fileList {
+  max-height: 300px; /* Adjust height as needed */
+  overflow-y: auto; /* Enables vertical scrolling */
+  border: 1px solid #4a4a4a; /* Optional: Adds a border */
+  padding: 10px;
+  border-radius: 8px;
+  text-align: left;
+}
+.toContainer p{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.providerButtons {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  margin-top: 50px; /* Add some space if needed */
+}
+
+.providerButton {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 10px; /* Add space between buttons */
+  width: 100px; /* Fixed width */
+  text-align: center; /* Center text inside the button */
+}
+
+.providerButton:hover {
+  background-color: #5a5a5a;
+}
+
+.repoList {
+  text-align: left;
+  color: #ffffff;
+}
+.fileItem {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Space between icon and text */
+  margin-bottom: 5px;
+}
+
+
+
+.fileIcon {
+  font-size: 1.2rem; /* Adjust icon size */
+  min-width: 20px; /* Ensures consistent alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fileLabel {
+  display: flex;
+  align-items: center; /* Align checkbox, icon, and text */
+  gap: 10px; /* Spacing between checkbox, icon, and text */
+}
+
+.folderButton {
+  display: flex;
+  align-items: center; /* Align icon and text */
+  gap: 10px;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.folderButton:hover {
+  color: #58a6ff;
+}
+
+.breadcrumb {
+  margin: 10px 0;
+  color: #58a6ff;
+}
+
+.newFolderInput {
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  padding: 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  width: calc(100% - 24px);
+}
+
+.newFolderButton {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newFolderButton:hover {
+  background-color: #0056b3;
+}
+
+
+
+.folderButton {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.folderButton:hover {
+  color: #58a6ff;
+}

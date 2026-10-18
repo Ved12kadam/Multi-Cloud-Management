@@ -1,0 +1,32 @@
+/* footer.module.css */
+
+.footer {
+  background-color: #121212;  /* Dark background like the image */
+  color: #ffffff;             /* White text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;         /* Padding to match spacing */
+  font-size: 14px;            /* Font size similar to the screenshot */
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footerLinks {
+  display: flex;
+}
+
+.footerLinks a {
+  color: #f7f6f4;             /* Color for the links */
+  text-decoration: none;
+  margin-left: 20px;          /* Space between the links */
+}
+
+.footerLinks a:hover {
+  text-decoration: underline; /* Hover effect */
+}

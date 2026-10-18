@@ -1,0 +1,248 @@
+/* filemanager.module.css */
+
+.file_manager {
+  font-family: 'Open Sans', sans-serif;
+  color: #eaeaea;
+  background-color: #0f0f10;
+  padding: 20px;
+  border-radius: 8px;
+  height: 560px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.loader_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+.header p {
+  margin-right: -160px;
+  color: #94a3b8;
+  font-size: 20px;
+}
+
+.header_buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header_buttons button,
+.header_buttons label {
+  background-color: #eaeaea;
+  color: #18181b;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 8px;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header_buttons button:hover,
+.header_buttons label:hover {
+  background-color: #3d3d43;
+  color: #eaeaea;
+}
+
+.category_tabs {
+  display: flex;
+  margin-bottom: 10px;
+  background-color: #3e3d43;
+  border-radius: 12px;
+  padding: 8px 12px;
+  width: fit-content;
+}
+
+.folder_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.folder_icon {
+  color: #facc15;
+  transition: transform 0.2s ease-in-out;
+}
+
+.folder_item:hover .folder_icon {
+  transform: scale(1.1);
+}
+
+.category_tabs button {
+  background-color: #3d3d43;
+  color: #eaeaea;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 8px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category_tabs button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.category_tabs button.active {
+  background-color: #eaeaea;
+  color: #18181b;
+}
+
+.file_table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.file_table th,
+.file_table td {
+  padding: 12px;
+  border-bottom: 1px solid #3d3d43;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}
+
+.file_table th {
+  color: #a5a5a5;
+  position: sticky;
+  top: 0;
+  background-color: #0f0f10;
+  z-index: 1;
+}
+
+.file_table tr:hover {
+  background-color: #3d3d43;
+}
+
+.download_link {
+  color: #0f0f10;
+  text-decoration: none;
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.download_link:hover {
+  color: #a7eaff;
+}
+
+.upload_btn:disabled,
+.delete_btn:disabled,
+.refresh_btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.file_manager::-webkit-scrollbar,
+.file_table_container::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+}
+
+.file_manager:hover::-webkit-scrollbar,
+.file_table_container:hover::-webkit-scrollbar {
+  display: block;
+}
+
+.file_manager::-webkit-scrollbar-track,
+.file_table_container::-webkit-scrollbar-track {
+  background: #1f1f22;
+}
+
+.file_manager::-webkit-scrollbar-thumb,
+.file_table_container::-webkit-scrollbar-thumb {
+  background: #3d3d43;
+  border-radius: 8px;
+}
+
+.file_manager::-webkit-scrollbar-thumb:hover,
+.file_table_container::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+.file_manager:hover,
+.file_table_container:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #3d3d43 #1f1f22;
+}
+
+.file_manager::-webkit-scrollbar-button,
+.file_table_container::-webkit-scrollbar-button {
+  display: none;
+}
+
+
+.action_buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust the gap between buttons as needed */
+}
+.individual_delete_btn {
+  background-color: #f44336; /* Example color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  height: 30px; /* Ensure height matches download button */
+}
+.action_buttons button {
+  display: inline-block;
+}
+.action_buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adjust the gap between buttons as needed */
+}
+
+.delete_btn_row {
+  background-color: #f44336; /* Example color */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  height: 35px; /* Ensure height matches download button */
+}

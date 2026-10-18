@@ -1,0 +1,79 @@
+.instructionsContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem 2.5rem;
+    background-color: #0f0f10;
+    color: #c9d1d9;
+    overflow-y: auto;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    font-size: 2.2rem; /* Slightly bigger font size */
+    margin-bottom: 1rem;
+    color: #f0f6fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    margin-right: 0.5rem;
+    font-size: 2.7rem; /* Increased icon size */
+    color: #eaeaea;
+}
+
+.intro {
+    font-size: 1.2rem; /* Slightly bigger font size */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.instructionsList {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    text-align: left;
+}
+
+.instructionsList li {
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.instructionsList li::before {
+    content: none;
+}
+
+.listIcon {
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    color: #eaeaea;
+    font-size: 1.4rem; /* Slightly bigger icon */
+}
+
+.instructionsList strong { /* Make important text bold */
+    font-weight: bold;
+}
+
+.footerText {
+    font-size: 1.1rem; /* Slightly bigger font size */
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.6;
+}

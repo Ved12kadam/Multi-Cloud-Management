@@ -1,0 +1,151 @@
+/* content.module.css */
+
+.contentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #0f0f10;
+  color: white;
+  height: 650px;
+}
+
+.contentText {
+  max-width: 50%;
+  margin-top: -100px;
+}
+
+.contentText h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.contentText p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.contentButtons {
+  display: flex;
+}
+
+.btnPrimary, .btnSecondary {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btnPrimary {
+  background-color: white;
+  color: black;
+}
+
+.btnSecondary {
+  background-color: #333;
+  color: white;
+}
+
+.contentImage {
+  background-color: none;
+  width: 600px;
+  height: 600px;
+}
+
+.contentImage img {
+  max-width: 100%;   /* Ensures image scales with container */
+  height: auto;      /* Keeps aspect ratio */
+  object-fit: fill;  /* Ensures it covers the container nicely */
+}
+
+/* For the buttons */
+.button {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect */
+
+.btnSecondary:hover {
+  background-color: #333; /* Change background on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* button */
+.btnPrimary {
+  border: none;
+  color: #050505;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 20px;
+}
+
+.btnPrimary::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f0f0;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+}
+
+/* glow */
+.btnPrimary::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* hover */
+.btnPrimary:hover::before {
+  opacity: 1;
+}
+
+.btnPrimary:active:after {
+  background: transparent;
+}
+
+.btnPrimary:active {
+  color: hsl(0, 0%, 0%);
+  font-weight: bold;
+}
+
+/* Hide WebKit Scrollbar - No changes needed here */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

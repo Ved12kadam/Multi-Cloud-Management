@@ -1,0 +1,36 @@
+/* navbar.module.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0f0f10; 
+  height: 60px;
+  margin-bottom: -20px;
+  font-family: Arial, sans-serif;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav_links {
+  list-style: none;
+  display: flex;
+  margin-right:10px ;
+}
+
+.nav_links li {
+  margin-left: 20px;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.nav_links a:hover {
+  color: lightblue;
+}

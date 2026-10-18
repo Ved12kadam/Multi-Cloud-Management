@@ -1,0 +1,152 @@
+/* General Dashboard Styles */
+.dashboard {
+  border-radius: 10px;
+  background-color: #3d3d43; /* Dark gray background */
+  color: #c9d1d9;
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px; /* Add padding to the main dashboard container */
+  overflow-y: hidden;
+}
+
+/* Storage Cards Container */
+.storage_cards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+/* Individual Storage Card */
+.storage_card {
+  background-color: #0f0f10;
+  padding: 1.5rem;
+  border-radius: 10px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.storage_icon {
+  font-size: 2rem;
+}
+
+.storage_title {
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.storage_usage {
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+.progress_bar {
+  background-color: #30363d;
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.progress {
+  background-color: #eaeaea;
+  height: 100%;
+  border-radius: 4px;
+}
+
+/* File Manager Section */
+.file_manager {
+  background-color: #0f0f10;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Align items vertically */
+  height: 384px;
+  margin-left: -20px;
+  margin-right: -20px; /* Set a fixed height */
+}
+
+.file_manager_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: -10px;
+}
+
+.file_actions .action_btn {
+  background-color: #eaeaea;
+  color: #18181b;
+  border: none;
+  padding: 8px 12px;
+  margin-left: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.file_actions .action_btn:hover {
+  background-color: #3d3d43;
+  color:#eaeaea;
+  transition: all 0.5s ease;
+}
+
+.file_table_container { /* This is the key for scrolling */
+  flex-grow: 1; /* Allow table container to expand and fill available space */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  max-height: 300px; /* Set a maximum height if needed */
+}
+
+
+.file_table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #eaeaea;
+  table-layout: fixed; /* Important for consistent column widths */
+}
+
+.file_table th,
+.file_table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #30363d;
+  text-align: left;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis */
+}
+
+.file_table th {
+  font-weight: bold;
+  color: #8b949e;
+}
+
+.icon_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #eaeaea;
+}
+
+.icon_btn:hover {
+  color: #92ccfe;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100%; /* Or a specific height if needed */
+  width: 100%; /* Or a specific width if needed */
+}
+
+/* Add this CSS rule for the Google Drive Icon */
+.providerIcon {
+    margin-right: 5px; /* Adjust spacing between icon and text if needed */
+    color: #34A853;     /* Example: Google Drive green color - adjust as desired */
+    vertical-align: middle; /* Align icon vertically with text */
+    font-size: 1.1em;     /* Adjust icon size if needed */
+}

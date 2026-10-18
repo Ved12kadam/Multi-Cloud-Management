@@ -1,0 +1,25 @@
+/* index.css */
+
+/* Apply a basic CSS reset to remove browser inconsistencies */
+*, *::before, *::after {
+    box-sizing: border-box; /* Important for layout calculations */
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    height: 100%; /* Make sure html, body, and root container take full viewport height */
+}
+
+body {
+    line-height: 1.5; /* Set a default line height for better readability */
+    font-family: sans-serif; /* Set a default font family */
+    overflow-x: hidden; /* Prevent horizontal scrollbars on body */
+    overflow-y: auto;  /* Allow vertical scrolling on body when content overflows */
+}
+
+#root {
+    display: flex;         /* Use flexbox for root container */
+    flex-direction: column; /* Stack content vertically within root */
+    min-height: 100vh;      /* Ensure root is at least viewport height */
+}
